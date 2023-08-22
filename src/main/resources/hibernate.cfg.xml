@@ -15,5 +15,9 @@
         <property name="hibernate.hbm2ddl.auto">update</property>
         <mapping class="many.model.Car" />
         <mapping class="many.model.Brand" />
+        <mapping class="manytomany.address.Address" />
+        <mapping class="manytomany.address.Person" />
+        <mapping class="manytomany.books.Book" />
+        <mapping class="manytomany.books.Writer" />
     </session-factory>
 </hibernate-configuration>
