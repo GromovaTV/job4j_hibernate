@@ -19,5 +19,9 @@
         <mapping class="manytomany.address.Person" />
         <mapping class="manytomany.books.Book" />
         <mapping class="manytomany.books.Writer" />
+        <mapping class="lazy.tasks.Task" />
+        <mapping class="lazy.tasks.Category" />
+        <mapping class="lazy.cars.Model" />
+        <mapping class="lazy.cars.CarBrand" />
     </session-factory>
 </hibernate-configuration>
