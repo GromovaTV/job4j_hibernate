@@ -25,5 +25,7 @@
         <mapping class="lazy.cars.Model" />
         <mapping class="lazy.cars.CarBrand" />
         <mapping class="hql.Candidate" />
+        <mapping class="hql.Vacancy" />
+        <mapping class="hql.VacancyDB" />
     </session-factory>
 </hibernate-configuration>

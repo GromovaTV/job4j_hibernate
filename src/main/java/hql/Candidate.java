@@ -8,15 +8,18 @@ public class Candidate {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    String name;
-    int experience;
-    int salary;
+    private String name;
+    private int experience;
+    private int salary;
+    @OneToOne
+    private VacancyDB vacancyDB;
 
-    public static Candidate of(String name, int experience, int salary) {
+    public static Candidate of(String name, int experience, int salary, VacancyDB vacancyDB) {
         Candidate cnd = new Candidate();
         cnd.setName(name);
         cnd.setExperience(experience);
         cnd.setSalary(salary);
+        cnd.setVacancyDB(vacancyDB);
         return cnd;
     }
 
@@ -52,13 +55,22 @@ public class Candidate {
         this.salary = salary;
     }
 
+    public VacancyDB getVacancyDB() {
+        return vacancyDB;
+    }
+
+    public void setVacancyDB(VacancyDB vacancyDB) {
+        this.vacancyDB = vacancyDB;
+    }
+
     @Override
     public String toString() {
         return "Candidate{"
                 + "id=" + id + '\''
                 + ", name='" + name + '\''
                 + ", experience=" + experience + '\''
-                + ", salary=" + salary
+                + ", salary=" + salary + '\''
+                + ", vacancyDB=" + vacancyDB + '\''
                 + '}';
     }
 }
