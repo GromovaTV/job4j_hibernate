@@ -1,6 +1,14 @@
- job4j_hibernate
+ Hibernate
 =================
 
-This repository contains the code for the "job4j_hibernate" project,
-which focuses on building a Hibernate-based application for managing 
-automobile data. 
+## О проекте
+Практика по Hibernate.
+
+## Технологии
+
+* Java
+* Hibernate
+* Hsqldb
+* Junit, Hamcrest
+* Maven
+* Checkstyle
